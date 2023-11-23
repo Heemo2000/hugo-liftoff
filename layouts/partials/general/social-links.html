@@ -4,8 +4,16 @@
     <!-- Twitter -->
     {{ with .Site.Params.social.links.twitter }}
     <li>
-      <a href="https://twitter.com/{{ . }}" target="_blank" rel="noopener" aria-label="Visit Twitter profile" class="social-btn twitter">
-        {{ partial "svg/twitter.svg" }}
+      <a href="https://twitter.com/{{ . }}" target="_blank" rel="noopener" aria-label="Visit X profile" class="social-btn twitter">
+        {{ partial "svg/twitterx.svg" }}
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Params.social.links.youtube }}
+    <li>
+      <a href="https://youtube.com/channel/{{ . }}" target="_blank" rel="noopener" aria-label="Visit Youtube profile" class="social-btn youtube">
+        {{ partial "svg/youtube.svg" }}
       </a>
     </li>
     {{ end }}
