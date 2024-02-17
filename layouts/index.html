@@ -4,7 +4,7 @@
     <div class="hero-info">
       <h1 class="hero-title">{{ .Title }}</h1>
       {{ with .Params.subtitle }}
-        <p class="hero-subtitle">{{. | markdownify}}</p>
+        <p class="hero-subtitle" style="font-style: italic;">{{. | markdownify}}</p>
       {{ end }}
       <div class="btn-group">
         {{ $p_cta := "" }}
@@ -27,7 +27,7 @@
     </div>
     <div class="hero-owner">
       {{ $avatar := .Site.Params.avatar }}
-      {{ $default_image := "images/default.png" }}
+      {{ $default_image := "images/my photo.jpg" }}
       {{ $image := "" }}
       {{ with $avatar }}
         {{ $image = resources.Get $avatar }}
